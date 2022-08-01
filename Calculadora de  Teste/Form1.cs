@@ -30,6 +30,16 @@ namespace Calculadora_de__Teste
             else
                 LblOne.Text = number;
         }
+        private void addSign(String sign)
+        {
+            //LblSign.Text = Convert.ToString(LblSign.Text);
+            LblSign.Text = sign;
+            String equals = Convert.ToString(LblEquals.Text);
+
+            // Supondo que já tenha ocorrido um calculo antes, ao apertar pra adicionar um novo sinal, ele continua apartir do resultado gerado
+            if (!(String.Equals(equals, "=")))
+                LblOne.Text = equals;
+        }
 
         private void BtnEnter_Click(object sender, EventArgs e)
         {
@@ -50,86 +60,21 @@ namespace Calculadora_de__Teste
                 MessageBox.Show("Símbolo inválido.");
         }
 
-        private void BtnZero_Click(object sender, EventArgs e)
-        {
-            appendNumbers(zero);
-        }
-        private void BtnOne_Click(object sender, EventArgs e)
-        {
-            appendNumbers(one);
-        }
-        private void BtnTwo_Click(object sender, EventArgs e)
-        {
-            appendNumbers(two);
-        }
-        private void BtnThree_Click(object sender, EventArgs e)
-        {
-            appendNumbers(three);
-        }
-        private void BtnFour_Click(object sender, EventArgs e)
-        {
-            appendNumbers(four);
-        }
-        private void BtnFive_Click(object sender, EventArgs e)
-        {
-            appendNumbers(five);
-        }
-        private void BtnSix_Click(object sender, EventArgs e)
-        {
-            appendNumbers(six);
-        }
-        private void BtnSeven_Click(object sender, EventArgs e)
-        {
-            appendNumbers(seven);
-        }
-        private void BtnEight_Click(object sender, EventArgs e)
-        {
-            appendNumbers(eight);
-        }
-        private void BtnNine_Click(object sender, EventArgs e)
-        {
-            appendNumbers(nine);
-        }
+        private void BtnZero_Click(object sender, EventArgs e) {appendNumbers(zero);}
+        private void BtnOne_Click(object sender, EventArgs e) {appendNumbers(one);}
+        private void BtnTwo_Click(object sender, EventArgs e) {appendNumbers(two);}
+        private void BtnThree_Click(object sender, EventArgs e) {appendNumbers(three);}
+        private void BtnFour_Click(object sender, EventArgs e) {appendNumbers(four);}
+        private void BtnFive_Click(object sender, EventArgs e) {appendNumbers(five);}
+        private void BtnSix_Click(object sender, EventArgs e) {appendNumbers(six);}
+        private void BtnSeven_Click(object sender, EventArgs e) {appendNumbers(seven);}
+        private void BtnEight_Click(object sender, EventArgs e) {appendNumbers(eight);}
+        private void BtnNine_Click(object sender, EventArgs e) {appendNumbers(nine);}
 
-        private void BtnPlus_Click(object sender, EventArgs e)
-        {
-            LblSign.Text = Convert.ToString(LblSign.Text);
-            LblSign.Text = plus;
-            String equals = Convert.ToString(LblEquals.Text);
-
-            if (!(String.Equals(equals, "=")))
-                LblOne.Text = equals;
-        }  
-
-        private void BtnMinus_Click(object sender, EventArgs e)
-        {
-            LblSign.Text = Convert.ToString(LblSign.Text);
-            LblSign.Text = minus;
-            String equals = Convert.ToString(LblEquals.Text);
-
-            if (!(String.Equals(equals, "=")))
-                LblOne.Text = equals;
-        }
-
-        private void BtnMultiplication_Click(object sender, EventArgs e)
-        {
-            LblSign.Text = Convert.ToString(LblSign.Text);
-            LblSign.Text = mult;
-            String equals = Convert.ToString(LblEquals.Text);
-
-            if (!(String.Equals(equals, "=")))
-                LblOne.Text = equals;
-        }
-
-        private void BtnDivision_Click(object sender, EventArgs e)
-        {
-            LblSign.Text = Convert.ToString(LblSign.Text);
-            LblSign.Text = divis;
-            String equals = Convert.ToString(LblEquals.Text);
-
-            if (!(String.Equals(equals, "=")))
-                LblOne.Text = equals;
-        }
+        private void BtnPlus_Click(object sender, EventArgs e) {addSign(plus);}  
+        private void BtnMinus_Click(object sender, EventArgs e) {addSign(minus);}
+        private void BtnMultiplication_Click(object sender, EventArgs e) {addSign(mult);}
+        private void BtnDivision_Click(object sender, EventArgs e) {addSign(divis);}
 
         private void BtnC_Click(object sender, EventArgs e)
         {
