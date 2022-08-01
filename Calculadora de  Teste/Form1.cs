@@ -2,20 +2,21 @@ namespace Calculadora_de__Teste
 {
     public partial class Form1 : Form
     {
-        String zero     = "0";
-        String one      = "1";
-        String two      = "2";
-        String three    = "3";
-        String four     = "4";
-        String five     = "5";
-        String six      = "6";
-        String seven    = "7";
-        String eight    = "8";
-        String nine     = "9";
-        String plus     = "+";
-        String minus    = "-";
-        String mult     = "*";
-        String divis    = "÷";
+        int cursor = 0;             // if(cursor == 0) LblOne else LblTwo
+        const String zero     = "0";
+        const String one      = "1";
+        const String two      = "2";
+        const String three    = "3";
+        const String four     = "4";
+        const String five     = "5";
+        const String six      = "6";
+        const String seven    = "7";
+        const String eight    = "8";
+        const String nine     = "9";
+        const String plus     = "+";
+        const String minus    = "-";
+        const String mult     = "*";
+        const String divis    = "÷";
         public Form1()
         {
             InitializeComponent();
@@ -25,20 +26,29 @@ namespace Calculadora_de__Teste
         {
             LblOne.Text = Convert.ToString(LblOne.Text);
             LblTwo.Text = Convert.ToString(LblTwo.Text);
-            if (LblOne.Text != "X")
+            if (LblOne.Text != "X" && cursor == 0)
+                LblOne.Text = LblOne.Text + number;
+            else if(LblOne.Text == "X" && cursor == 0)
+                LblOne.Text = number;
+            else if (LblTwo.Text != "X" && cursor == 1)
+                LblTwo.Text = LblTwo.Text + number;
+            else if(LblTwo.Text == "X" && cursor == 1)
                 LblTwo.Text = number;
             else
-                LblOne.Text = number;
+                MessageBox.Show("Ocorreu um erro interno.");
         }
         private void addSign(String sign)
         {
-            //LblSign.Text = Convert.ToString(LblSign.Text);
-            LblSign.Text = sign;
             String equals = Convert.ToString(LblEquals.Text);
 
             // Supondo que já tenha ocorrido um calculo antes, ao apertar pra adicionar um novo sinal, ele continua apartir do resultado gerado
             if (!(String.Equals(equals, "=")))
+            {
+                resetAll();
                 LblOne.Text = equals;
+            }
+            LblSign.Text = sign;
+            cursor = 1;
         }
 
         private void BtnEnter_Click(object sender, EventArgs e)
@@ -58,6 +68,15 @@ namespace Calculadora_de__Teste
                 LblEquals.Text = Convert.ToString(n1 / n2);
             else
                 MessageBox.Show("Símbolo inválido.");
+            cursor = 0;
+        }
+        private void resetAll()
+        {
+            LblOne.Text = "X";
+            LblTwo.Text = "X";
+            LblSign.Text = "X";
+            LblEquals.Text = "=";
+            cursor = 0;
         }
 
         private void BtnZero_Click(object sender, EventArgs e) {appendNumbers(zero);}
@@ -78,10 +97,7 @@ namespace Calculadora_de__Teste
 
         private void BtnC_Click(object sender, EventArgs e)
         {
-            LblOne.Text     = "X";
-            LblTwo.Text     = "X";
-            LblSign.Text    = "X";
-            LblEquals.Text  = "=";
+            resetAll();
         }
     }
 }
