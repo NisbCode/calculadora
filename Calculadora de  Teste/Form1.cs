@@ -21,6 +21,16 @@ namespace Calculadora_de__Teste
             InitializeComponent();
         }
 
+        private void appendNumbers(String number)
+        {
+            LblOne.Text = Convert.ToString(LblOne.Text);
+            LblTwo.Text = Convert.ToString(LblTwo.Text);
+            if (LblOne.Text != "X")
+                LblTwo.Text = number;
+            else
+                LblOne.Text = number;
+        }
+
         private void BtnEnter_Click(object sender, EventArgs e)
         {
             int n1 = 0, n2 = 0;
@@ -42,103 +52,43 @@ namespace Calculadora_de__Teste
 
         private void BtnZero_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = zero;
-            else
-                LblOne.Text = zero;
+            appendNumbers(zero);
         }
         private void BtnOne_Click(object sender, EventArgs e)
         {
-            LblOne.Text     = Convert.ToString(LblOne.Text);
-            LblTwo.Text     = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = one;
-            else
-                LblOne.Text = one;
+            appendNumbers(one);
         }
         private void BtnTwo_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = two;
-            else
-                LblOne.Text = two;
+            appendNumbers(two);
         }
         private void BtnThree_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = three;
-            else
-                LblOne.Text = three;
+            appendNumbers(three);
         }
         private void BtnFour_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = four;
-            else
-                LblOne.Text = four;
+            appendNumbers(four);
         }
         private void BtnFive_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = five;
-            else
-                LblOne.Text = five;
+            appendNumbers(five);
         }
         private void BtnSix_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = six;
-            else
-                LblOne.Text = six;
+            appendNumbers(six);
         }
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = seven;
-            else
-                LblOne.Text = seven;
+            appendNumbers(seven);
         }
         private void BtnEight_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = eight;
-            else
-                LblOne.Text = eight;
+            appendNumbers(eight);
         }
         private void BtnNine_Click(object sender, EventArgs e)
         {
-            LblOne.Text = Convert.ToString(LblOne.Text);
-            LblTwo.Text = Convert.ToString(LblTwo.Text);
-
-            if (LblOne.Text != "X")
-                LblTwo.Text = nine;
-            else
-                LblOne.Text = nine;
+            appendNumbers(nine);
         }
 
         private void BtnPlus_Click(object sender, EventArgs e)
