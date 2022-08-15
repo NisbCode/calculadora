@@ -6,6 +6,8 @@ namespace Calculadora_de__Teste
     {
         int cursor = 0;             // if(cursor == 0) LblOne else LblTwo
         int MAX_ENTRIES = 8;             // Máximo de entradas que cada parte do display pode ter
+        //BtnEnter.TabIndex = 1;        // travar o selct do tab de sair do botão enter
+
         const String zero     = "0";
         const String one      = "1";
         const String two      = "2";
@@ -30,11 +32,11 @@ namespace Calculadora_de__Teste
             LblOne.Text = Convert.ToString(LblOne.Text);
             LblTwo.Text = Convert.ToString(LblTwo.Text);
             if (LblOne.Text != "X" && cursor == 0 && LblOne.Text.Length < MAX_ENTRIES)
-                LblOne.Text = LblOne.Text + number;
+                LblOne.Text += number;
             else if(LblOne.Text == "X" && cursor == 0)
                 LblOne.Text = number;
             else if (LblTwo.Text != "X" && cursor == 1 && LblTwo.Text.Length < MAX_ENTRIES)
-                LblTwo.Text = LblTwo.Text + number;
+                LblTwo.Text += number;
             else if(LblTwo.Text == "X" && cursor == 1)
                 LblTwo.Text = number;
             else
@@ -71,7 +73,7 @@ namespace Calculadora_de__Teste
             cursor = 1;
         }
 
-        private void BtnEnter_Click(object sender, EventArgs e)
+        private void Send()
         {
             float n1 = Convert.ToInt32(LblOne.Text);
             float n2 = Convert.ToInt32(LblTwo.Text);
@@ -90,12 +92,14 @@ namespace Calculadora_de__Teste
                 MessageBox.Show("Símbolo inválido.");
 
             //Verificando o valor do resultado final
-            if (equals.Length > MAX_ENTRIES) {
+            if (equals.Length > MAX_ENTRIES)
+            {
                 float float_conv = float.Parse(equals, CultureInfo.InvariantCulture.NumberFormat);
                 LblEquals.Text = Convert.ToString(Math.Round(float_conv, 1));
             }
             cursor = 0;
         }
+        private void BtnEnter_Click(object sender, EventArgs e) {Send();}
         private void resetAll()
         {
             LblOne.Text = "X";
@@ -119,10 +123,32 @@ namespace Calculadora_de__Teste
         private void BtnPlus_Click(object sender, EventArgs e) {AddSign(plus);}  
         private void BtnMinus_Click(object sender, EventArgs e) {AddSign(minus);}
         private void BtnMultiplication_Click(object sender, EventArgs e) {AddSign(mult);}
-        private void BtnDivision_Click(object sender, EventArgs e) {AddSign(divis); }
+        private void BtnDivision_Click(object sender, EventArgs e) {AddSign(divis);}
         private void BtnPorc_Click(object sender, EventArgs e) {LblTwo.Text = Convert.ToString(100); AddSign(porc);}
 
         private void BtnC_Click(object sender, EventArgs e) {resetAll();}
         private void BtnBackspace_Click(object sender, EventArgs e) {DeleteNumbers();}
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D0 || e.KeyCode == Keys.NumPad0)      AppendNumbers(zero);
+            else if (e.KeyCode == Keys.D1 || e.KeyCode == Keys.NumPad1) AppendNumbers(one);
+            else if (e.KeyCode == Keys.D2 || e.KeyCode == Keys.NumPad2) AppendNumbers(two);
+            else if (e.KeyCode == Keys.D3 || e.KeyCode == Keys.NumPad3) AppendNumbers(three);
+            else if (e.KeyCode == Keys.D4 || e.KeyCode == Keys.NumPad4) AppendNumbers(four);
+            else if (e.KeyCode == Keys.D5 || e.KeyCode == Keys.NumPad5) AppendNumbers(five);
+            else if (e.KeyCode == Keys.D6 || e.KeyCode == Keys.NumPad6) AppendNumbers(six);
+            else if (e.KeyCode == Keys.D7 || e.KeyCode == Keys.NumPad7) AppendNumbers(seven);
+            else if (e.KeyCode == Keys.D8 || e.KeyCode == Keys.NumPad8) AppendNumbers(eight);
+            else if (e.KeyCode == Keys.D9 || e.KeyCode == Keys.NumPad9) AppendNumbers(nine);
+            else if (e.KeyCode == Keys.Oemplus || e.KeyCode == Keys.Add)        AddSign(plus);
+            else if (e.KeyCode == Keys.OemMinus || e.KeyCode == Keys.Subtract)  AddSign(minus);
+            else if (e.KeyCode == Keys.OemPeriod || e.KeyCode == Keys.Multiply) AddSign(mult);
+            else if (e.KeyCode == Keys.OemPipe || e.KeyCode == Keys.Divide)     AddSign(divis);
+            else if (e.KeyCode == Keys.Back)    DeleteNumbers();
+            else if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)   Send();
+            else
+                MessageBox.Show("Input não identificado.");
+        }
     }
 }
