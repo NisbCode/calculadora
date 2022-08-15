@@ -37,17 +37,13 @@
             this.BtnComma = new System.Windows.Forms.Button();
             this.BtnMultiplication = new System.Windows.Forms.Button();
             this.BtnDivision = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.BtnCE = new System.Windows.Forms.Button();
-            this.BtnPorc = new System.Windows.Forms.Button();
             this.BtnPlus = new System.Windows.Forms.Button();
             this.BtnMinus = new System.Windows.Forms.Button();
             this.BtnEight = new System.Windows.Forms.Button();
             this.BtnC = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.BtnOne = new System.Windows.Forms.Button();
             this.BtnSeven = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.BtnNine = new System.Windows.Forms.Button();
             this.BtnBackspace = new System.Windows.Forms.Button();
             this.BtnEnter = new System.Windows.Forms.Button();
@@ -72,81 +68,34 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.BtnZero, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BtnThree, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BtnTwo, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BtnSix, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BtnFive, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BtnComma, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BtnMultiplication, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BtnDivision, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button15, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.BtnZero, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BtnThree, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BtnTwo, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BtnSix, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BtnFive, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BtnComma, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BtnMultiplication, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.BtnDivision, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.BtnCE, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BtnPorc, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BtnPlus, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BtnMinus, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BtnEight, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BtnPlus, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BtnMinus, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BtnEight, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.BtnC, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button8, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BtnOne, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BtnSeven, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BtnNine, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BtnBackspace, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BtnEnter, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BtnParenteses, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BtnFour, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BtnOne, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BtnSeven, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.BtnNine, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.BtnBackspace, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.BtnEnter, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BtnParenteses, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BtnFour, 0, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 146);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -162,9 +111,9 @@
             this.BtnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnZero.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnZero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnZero.Location = new System.Drawing.Point(110, 343);
+            this.BtnZero.Location = new System.Drawing.Point(110, 331);
             this.BtnZero.Name = "BtnZero";
-            this.BtnZero.Size = new System.Drawing.Size(101, 65);
+            this.BtnZero.Size = new System.Drawing.Size(101, 77);
             this.BtnZero.TabIndex = 24;
             this.BtnZero.TabStop = false;
             this.BtnZero.Text = "0";
@@ -179,9 +128,9 @@
             this.BtnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnThree.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnThree.Location = new System.Drawing.Point(217, 275);
+            this.BtnThree.Location = new System.Drawing.Point(217, 249);
             this.BtnThree.Name = "BtnThree";
-            this.BtnThree.Size = new System.Drawing.Size(101, 62);
+            this.BtnThree.Size = new System.Drawing.Size(101, 76);
             this.BtnThree.TabIndex = 23;
             this.BtnThree.TabStop = false;
             this.BtnThree.Text = "3";
@@ -196,9 +145,9 @@
             this.BtnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTwo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnTwo.Location = new System.Drawing.Point(110, 275);
+            this.BtnTwo.Location = new System.Drawing.Point(110, 249);
             this.BtnTwo.Name = "BtnTwo";
-            this.BtnTwo.Size = new System.Drawing.Size(101, 62);
+            this.BtnTwo.Size = new System.Drawing.Size(101, 76);
             this.BtnTwo.TabIndex = 22;
             this.BtnTwo.TabStop = false;
             this.BtnTwo.Text = "2";
@@ -213,9 +162,9 @@
             this.BtnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSix.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnSix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnSix.Location = new System.Drawing.Point(217, 207);
+            this.BtnSix.Location = new System.Drawing.Point(217, 167);
             this.BtnSix.Name = "BtnSix";
-            this.BtnSix.Size = new System.Drawing.Size(101, 62);
+            this.BtnSix.Size = new System.Drawing.Size(101, 76);
             this.BtnSix.TabIndex = 21;
             this.BtnSix.TabStop = false;
             this.BtnSix.Text = "6";
@@ -230,9 +179,9 @@
             this.BtnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFive.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnFive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnFive.Location = new System.Drawing.Point(110, 207);
+            this.BtnFive.Location = new System.Drawing.Point(110, 167);
             this.BtnFive.Name = "BtnFive";
-            this.BtnFive.Size = new System.Drawing.Size(101, 62);
+            this.BtnFive.Size = new System.Drawing.Size(101, 76);
             this.BtnFive.TabIndex = 20;
             this.BtnFive.TabStop = false;
             this.BtnFive.Text = "5";
@@ -247,9 +196,9 @@
             this.BtnComma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnComma.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnComma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnComma.Location = new System.Drawing.Point(217, 343);
+            this.BtnComma.Location = new System.Drawing.Point(217, 331);
             this.BtnComma.Name = "BtnComma";
-            this.BtnComma.Size = new System.Drawing.Size(101, 65);
+            this.BtnComma.Size = new System.Drawing.Size(101, 77);
             this.BtnComma.TabIndex = 19;
             this.BtnComma.TabStop = false;
             this.BtnComma.Text = ",";
@@ -263,9 +212,9 @@
             this.BtnMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMultiplication.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnMultiplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnMultiplication.Location = new System.Drawing.Point(324, 139);
+            this.BtnMultiplication.Location = new System.Drawing.Point(324, 85);
             this.BtnMultiplication.Name = "BtnMultiplication";
-            this.BtnMultiplication.Size = new System.Drawing.Size(104, 62);
+            this.BtnMultiplication.Size = new System.Drawing.Size(104, 76);
             this.BtnMultiplication.TabIndex = 18;
             this.BtnMultiplication.TabStop = false;
             this.BtnMultiplication.Text = "*";
@@ -280,30 +229,14 @@
             this.BtnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDivision.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnDivision.Location = new System.Drawing.Point(324, 71);
+            this.BtnDivision.Location = new System.Drawing.Point(324, 3);
             this.BtnDivision.Name = "BtnDivision";
-            this.BtnDivision.Size = new System.Drawing.Size(104, 62);
+            this.BtnDivision.Size = new System.Drawing.Size(104, 76);
             this.BtnDivision.TabIndex = 17;
             this.BtnDivision.TabStop = false;
             this.BtnDivision.Text = "÷";
             this.BtnDivision.UseVisualStyleBackColor = false;
             this.BtnDivision.Click += new System.EventHandler(this.BtnDivision_Click);
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button15.Location = new System.Drawing.Point(110, 71);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(101, 62);
-            this.button15.TabIndex = 16;
-            this.button15.TabStop = false;
-            this.button15.Text = "1";
-            this.button15.UseVisualStyleBackColor = false;
             // 
             // BtnCE
             // 
@@ -315,27 +248,10 @@
             this.BtnCE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BtnCE.Location = new System.Drawing.Point(110, 3);
             this.BtnCE.Name = "BtnCE";
-            this.BtnCE.Size = new System.Drawing.Size(101, 62);
+            this.BtnCE.Size = new System.Drawing.Size(101, 76);
             this.BtnCE.TabIndex = 4;
             this.BtnCE.Text = "CE";
             this.BtnCE.UseVisualStyleBackColor = false;
-            // 
-            // BtnPorc
-            // 
-            this.BtnPorc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.BtnPorc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnPorc.FlatAppearance.BorderSize = 0;
-            this.BtnPorc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPorc.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnPorc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnPorc.Location = new System.Drawing.Point(3, 3);
-            this.BtnPorc.Name = "BtnPorc";
-            this.BtnPorc.Size = new System.Drawing.Size(101, 62);
-            this.BtnPorc.TabIndex = 14;
-            this.BtnPorc.TabStop = false;
-            this.BtnPorc.Text = "%";
-            this.BtnPorc.UseVisualStyleBackColor = false;
-            this.BtnPorc.Click += new System.EventHandler(this.BtnPorc_Click);
             // 
             // BtnPlus
             // 
@@ -345,9 +261,9 @@
             this.BtnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPlus.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnPlus.Location = new System.Drawing.Point(324, 275);
+            this.BtnPlus.Location = new System.Drawing.Point(324, 249);
             this.BtnPlus.Name = "BtnPlus";
-            this.BtnPlus.Size = new System.Drawing.Size(104, 62);
+            this.BtnPlus.Size = new System.Drawing.Size(104, 76);
             this.BtnPlus.TabIndex = 13;
             this.BtnPlus.TabStop = false;
             this.BtnPlus.Text = "+";
@@ -362,9 +278,9 @@
             this.BtnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinus.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnMinus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnMinus.Location = new System.Drawing.Point(324, 207);
+            this.BtnMinus.Location = new System.Drawing.Point(324, 167);
             this.BtnMinus.Name = "BtnMinus";
-            this.BtnMinus.Size = new System.Drawing.Size(104, 62);
+            this.BtnMinus.Size = new System.Drawing.Size(104, 76);
             this.BtnMinus.TabIndex = 12;
             this.BtnMinus.TabStop = false;
             this.BtnMinus.Text = "-";
@@ -379,9 +295,9 @@
             this.BtnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEight.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnEight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnEight.Location = new System.Drawing.Point(110, 139);
+            this.BtnEight.Location = new System.Drawing.Point(110, 85);
             this.BtnEight.Name = "BtnEight";
-            this.BtnEight.Size = new System.Drawing.Size(101, 62);
+            this.BtnEight.Size = new System.Drawing.Size(101, 76);
             this.BtnEight.TabIndex = 11;
             this.BtnEight.TabStop = false;
             this.BtnEight.Text = "8";
@@ -396,29 +312,13 @@
             this.BtnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnC.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnC.Location = new System.Drawing.Point(217, 3);
+            this.BtnC.Location = new System.Drawing.Point(3, 3);
             this.BtnC.Name = "BtnC";
-            this.BtnC.Size = new System.Drawing.Size(101, 62);
+            this.BtnC.Size = new System.Drawing.Size(101, 76);
             this.BtnC.TabIndex = 3;
             this.BtnC.Text = "C";
             this.BtnC.UseVisualStyleBackColor = false;
             this.BtnC.Click += new System.EventHandler(this.BtnC_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button8.Location = new System.Drawing.Point(3, 71);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(101, 62);
-            this.button8.TabIndex = 9;
-            this.button8.TabStop = false;
-            this.button8.Text = "1";
-            this.button8.UseVisualStyleBackColor = false;
             // 
             // BtnOne
             // 
@@ -428,9 +328,9 @@
             this.BtnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOne.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnOne.Location = new System.Drawing.Point(3, 275);
+            this.BtnOne.Location = new System.Drawing.Point(3, 249);
             this.BtnOne.Name = "BtnOne";
-            this.BtnOne.Size = new System.Drawing.Size(101, 62);
+            this.BtnOne.Size = new System.Drawing.Size(101, 76);
             this.BtnOne.TabIndex = 8;
             this.BtnOne.TabStop = false;
             this.BtnOne.Text = "1";
@@ -445,30 +345,14 @@
             this.BtnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSeven.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnSeven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnSeven.Location = new System.Drawing.Point(3, 139);
+            this.BtnSeven.Location = new System.Drawing.Point(3, 85);
             this.BtnSeven.Name = "BtnSeven";
-            this.BtnSeven.Size = new System.Drawing.Size(101, 62);
+            this.BtnSeven.Size = new System.Drawing.Size(101, 76);
             this.BtnSeven.TabIndex = 7;
             this.BtnSeven.TabStop = false;
             this.BtnSeven.Text = "7";
             this.BtnSeven.UseVisualStyleBackColor = false;
             this.BtnSeven.Click += new System.EventHandler(this.BtnSeven_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button5.Location = new System.Drawing.Point(217, 71);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 62);
-            this.button5.TabIndex = 6;
-            this.button5.TabStop = false;
-            this.button5.Text = "1";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // BtnNine
             // 
@@ -478,9 +362,9 @@
             this.BtnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnNine.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnNine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnNine.Location = new System.Drawing.Point(217, 139);
+            this.BtnNine.Location = new System.Drawing.Point(217, 85);
             this.BtnNine.Name = "BtnNine";
-            this.BtnNine.Size = new System.Drawing.Size(101, 62);
+            this.BtnNine.Size = new System.Drawing.Size(101, 76);
             this.BtnNine.TabIndex = 5;
             this.BtnNine.TabStop = false;
             this.BtnNine.Text = "9";
@@ -495,9 +379,9 @@
             this.BtnBackspace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBackspace.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnBackspace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnBackspace.Location = new System.Drawing.Point(324, 3);
+            this.BtnBackspace.Location = new System.Drawing.Point(217, 3);
             this.BtnBackspace.Name = "BtnBackspace";
-            this.BtnBackspace.Size = new System.Drawing.Size(104, 62);
+            this.BtnBackspace.Size = new System.Drawing.Size(101, 76);
             this.BtnBackspace.TabIndex = 2;
             this.BtnBackspace.Text = "<==";
             this.BtnBackspace.UseVisualStyleBackColor = false;
@@ -511,9 +395,9 @@
             this.BtnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEnter.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnEnter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnEnter.Location = new System.Drawing.Point(324, 343);
+            this.BtnEnter.Location = new System.Drawing.Point(324, 331);
             this.BtnEnter.Name = "BtnEnter";
-            this.BtnEnter.Size = new System.Drawing.Size(104, 65);
+            this.BtnEnter.Size = new System.Drawing.Size(104, 77);
             this.BtnEnter.TabIndex = 1;
             this.BtnEnter.Text = "=";
             this.BtnEnter.UseVisualStyleBackColor = false;
@@ -527,9 +411,9 @@
             this.BtnParenteses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnParenteses.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnParenteses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnParenteses.Location = new System.Drawing.Point(3, 343);
+            this.BtnParenteses.Location = new System.Drawing.Point(3, 331);
             this.BtnParenteses.Name = "BtnParenteses";
-            this.BtnParenteses.Size = new System.Drawing.Size(101, 65);
+            this.BtnParenteses.Size = new System.Drawing.Size(101, 77);
             this.BtnParenteses.TabIndex = 2;
             this.BtnParenteses.TabStop = false;
             this.BtnParenteses.Text = "(  )";
@@ -543,9 +427,9 @@
             this.BtnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFour.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnFour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnFour.Location = new System.Drawing.Point(3, 207);
+            this.BtnFour.Location = new System.Drawing.Point(3, 167);
             this.BtnFour.Name = "BtnFour";
-            this.BtnFour.Size = new System.Drawing.Size(101, 62);
+            this.BtnFour.Size = new System.Drawing.Size(101, 76);
             this.BtnFour.TabIndex = 3;
             this.BtnFour.TabStop = false;
             this.BtnFour.Text = "4";
@@ -638,18 +522,10 @@
 
         #endregion
         private TableLayoutPanel tableLayoutPanel1;
-        private Button BtnFour;
         private Button BtnNine;
         private Button BtnBackspace;
         private Button BtnEnter;
-        private Button BtnParenteses;
         private Button BtnEight;
-        private Button BtnC;
-        private Button button8;
-        private Button BtnOne;
-        private Button BtnSeven;
-        private Button button5;
-        private Button BtnZero;
         private Button BtnThree;
         private Button BtnTwo;
         private Button BtnSix;
@@ -657,9 +533,6 @@
         private Button BtnComma;
         private Button BtnMultiplication;
         private Button BtnDivision;
-        private Button button15;
-        private Button BtnCE;
-        private Button BtnPorc;
         private Button BtnPlus;
         private Button BtnMinus;
         private Panel PanelDisplay;
@@ -667,5 +540,12 @@
         private Label LblSign;
         private Label LblOne;
         private Label LblEquals;
+        private Button BtnZero;
+        private Button BtnCE;
+        private Button BtnC;
+        private Button BtnOne;
+        private Button BtnSeven;
+        private Button BtnParenteses;
+        private Button BtnFour;
     }
 }
