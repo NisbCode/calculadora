@@ -5,9 +5,12 @@ namespace Calculadora_de__Teste
 {
     public partial class Form1 : Form
     {
-        int cursor = 0;             // if(cursor == 0) LblOne else LblTwo
-        int MAX_ENTRIES = 8;             // Máximo de entradas que cada parte do display pode ter
+        int cursor = 0;                 // if(cursor == 0) LblOne else LblTwo
+        int MAX_ENTRIES = 8;            // Máximo de entradas que cada parte do display pode ter
         //BtnEnter.TabIndex = 1;        // travar o selct do tab de sair do botão enter
+        private int startLeft = -300;  // start position do painel
+        private int endLeft = 10;      // end position do painel
+        private int stepSize = 10;     // pixels para mover
 
         const String zero     = "0";
         const String one      = "1";
@@ -165,9 +168,54 @@ namespace Calculadora_de__Teste
 
         private void BtnHistoric_Click(object sender, EventArgs e)
         {
-            if (PainelHistoric.Visible == true) PainelHistoric.Visible = false;
-            else PainelHistoric.Visible = true;
-            //PainelHistoric.Visible = true ? PainelHistoric.Visible = false : PainelHistoric.Visible = true;
+            TimerHistoric.Enabled = true;
+        }
+
+        private void TimerHistoric_Tick(object sender, EventArgs e)
+        {
+            if (PainelHistoric.Visible && PainelHistoric.Left == endLeft)
+            {
+                PainelHistoric.Left -= stepSize;
+                if (PainelHistoric.Left > startLeft) PainelHistoric.Left = startLeft;
+                if (PainelHistoric.Left == startLeft)
+                {
+                    TimerHistoric.Enabled = false;
+                    PainelHistoric.Visible = false;
+                }
+            }
+
+            // if just starting, move to start location and make visible
+            if (!PainelHistoric.Visible)
+            {
+                PainelHistoric.Left = startLeft;
+                PainelHistoric.Visible = true;
+            }
+            // incrementally move
+            PainelHistoric.Left += stepSize;
+            // make sure we didn't over shoot
+            if (PainelHistoric.Left > endLeft) PainelHistoric.Left = endLeft;
+            // have we arrived?
+            if (PainelHistoric.Left == endLeft) TimerHistoric.Enabled = false;
+
+            /*
+            // if just starting, move to start location and make visible
+            if (!PainelHistoric.Visible)
+            {
+                PainelHistoric.Left = startLeft;
+                PainelHistoric.Visible = true;
+            }
+
+            // incrementally move
+            PainelHistoric.Left += stepSize;
+            // make sure we didn't over shoot
+            if (PainelHistoric.Left > endLeft) PainelHistoric.Left = endLeft;
+
+            // have we arrived?
+            if (PainelHistoric.Left == endLeft)
+            {
+                TimerHistoric.Enabled = false;
+            }
+            */
         }
     }
 }

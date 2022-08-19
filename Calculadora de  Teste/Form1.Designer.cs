@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnZero = new System.Windows.Forms.Button();
             this.BtnThree = new System.Windows.Forms.Button();
@@ -56,8 +57,9 @@
             this.LblSign = new System.Windows.Forms.Label();
             this.LblOne = new System.Windows.Forms.Label();
             this.PainelHistoric = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnSwitchHist = new System.Windows.Forms.Button();
+            this.BtnSwitchHome = new System.Windows.Forms.Button();
+            this.TimerHistoric = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.PanelDisplay.SuspendLayout();
             this.PainelHistoric.SuspendLayout();
@@ -527,8 +529,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PainelHistoric.AutoSize = true;
-            this.PainelHistoric.Controls.Add(this.button2);
-            this.PainelHistoric.Controls.Add(this.button1);
+            this.PainelHistoric.Controls.Add(this.BtnSwitchHist);
+            this.PainelHistoric.Controls.Add(this.BtnSwitchHome);
             this.PainelHistoric.Location = new System.Drawing.Point(0, 0);
             this.PainelHistoric.MaximumSize = new System.Drawing.Size(250, 570);
             this.PainelHistoric.MinimumSize = new System.Drawing.Size(250, 570);
@@ -536,39 +538,45 @@
             this.PainelHistoric.Size = new System.Drawing.Size(250, 570);
             this.PainelHistoric.TabIndex = 3;
             // 
-            // button2
+            // BtnSwitchHist
             // 
-            this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 60);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "LUGAR ALGUM";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BtnSwitchHist.AutoSize = true;
+            this.BtnSwitchHist.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSwitchHist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnSwitchHist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSwitchHist.FlatAppearance.BorderSize = 0;
+            this.BtnSwitchHist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSwitchHist.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSwitchHist.ForeColor = System.Drawing.Color.White;
+            this.BtnSwitchHist.Location = new System.Drawing.Point(0, 60);
+            this.BtnSwitchHist.Name = "BtnSwitchHist";
+            this.BtnSwitchHist.Size = new System.Drawing.Size(250, 60);
+            this.BtnSwitchHist.TabIndex = 1;
+            this.BtnSwitchHist.Text = "HISTÓRICO";
+            this.BtnSwitchHist.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // BtnSwitchHome
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "LUGAR ALGUM";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnSwitchHome.AutoSize = true;
+            this.BtnSwitchHome.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSwitchHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnSwitchHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSwitchHome.Enabled = false;
+            this.BtnSwitchHome.FlatAppearance.BorderSize = 0;
+            this.BtnSwitchHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSwitchHome.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSwitchHome.ForeColor = System.Drawing.Color.White;
+            this.BtnSwitchHome.Location = new System.Drawing.Point(0, 0);
+            this.BtnSwitchHome.Name = "BtnSwitchHome";
+            this.BtnSwitchHome.Size = new System.Drawing.Size(250, 60);
+            this.BtnSwitchHome.TabIndex = 0;
+            this.BtnSwitchHome.Text = "HOME";
+            this.BtnSwitchHome.UseVisualStyleBackColor = false;
+            // 
+            // TimerHistoric
+            // 
+            this.TimerHistoric.Interval = 10;
+            this.TimerHistoric.Tick += new System.EventHandler(this.TimerHistoric_Tick);
             // 
             // Form1
             // 
@@ -623,8 +631,9 @@
         private Button BtnParenteses;
         private Button BtnFour;
         private Panel PainelHistoric;
-        private Button button1;
-        private Button button2;
+        private Button BtnSwitchHome;
+        private Button BtnSwitchHist;
         private Button BtnHistoric;
+        private System.Windows.Forms.Timer TimerHistoric;
     }
 }
