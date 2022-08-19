@@ -50,12 +50,17 @@
             this.BtnParenteses = new System.Windows.Forms.Button();
             this.BtnFour = new System.Windows.Forms.Button();
             this.PanelDisplay = new System.Windows.Forms.Panel();
+            this.BtnHistoric = new System.Windows.Forms.Button();
             this.LblEquals = new System.Windows.Forms.Label();
             this.LblTwo = new System.Windows.Forms.Label();
             this.LblSign = new System.Windows.Forms.Label();
             this.LblOne = new System.Windows.Forms.Label();
+            this.PainelHistoric = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.PanelDisplay.SuspendLayout();
+            this.PainelHistoric.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -440,6 +445,7 @@
             // 
             this.PanelDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelDisplay.Controls.Add(this.BtnHistoric);
             this.PanelDisplay.Controls.Add(this.LblEquals);
             this.PanelDisplay.Controls.Add(this.LblTwo);
             this.PanelDisplay.Controls.Add(this.LblSign);
@@ -448,6 +454,21 @@
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.Size = new System.Drawing.Size(431, 144);
             this.PanelDisplay.TabIndex = 2;
+            // 
+            // BtnHistoric
+            // 
+            this.BtnHistoric.BackColor = System.Drawing.Color.Transparent;
+            this.BtnHistoric.FlatAppearance.BorderSize = 0;
+            this.BtnHistoric.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnHistoric.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnHistoric.ForeColor = System.Drawing.Color.White;
+            this.BtnHistoric.Location = new System.Drawing.Point(364, 15);
+            this.BtnHistoric.Name = "BtnHistoric";
+            this.BtnHistoric.Size = new System.Drawing.Size(50, 50);
+            this.BtnHistoric.TabIndex = 4;
+            this.BtnHistoric.Text = "H";
+            this.BtnHistoric.UseVisualStyleBackColor = false;
+            this.BtnHistoric.Click += new System.EventHandler(this.BtnHistoric_Click);
             // 
             // LblEquals
             // 
@@ -500,23 +521,77 @@
             this.LblOne.TabIndex = 0;
             this.LblOne.Text = "X";
             // 
+            // PainelHistoric
+            // 
+            this.PainelHistoric.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PainelHistoric.AutoSize = true;
+            this.PainelHistoric.Controls.Add(this.button2);
+            this.PainelHistoric.Controls.Add(this.button1);
+            this.PainelHistoric.Location = new System.Drawing.Point(0, 0);
+            this.PainelHistoric.MaximumSize = new System.Drawing.Size(250, 570);
+            this.PainelHistoric.MinimumSize = new System.Drawing.Size(250, 570);
+            this.PainelHistoric.Name = "PainelHistoric";
+            this.PainelHistoric.Size = new System.Drawing.Size(250, 570);
+            this.PainelHistoric.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(250, 60);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "LUGAR ALGUM";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 60);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "LUGAR ALGUM";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(455, 569);
+            this.Controls.Add(this.PainelHistoric);
             this.Controls.Add(this.PanelDisplay);
             this.Controls.Add(this.tableLayoutPanel1);
             this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(395, 400);
             this.Name = "Form1";
             this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.PanelDisplay.ResumeLayout(false);
             this.PanelDisplay.PerformLayout();
+            this.PainelHistoric.ResumeLayout(false);
+            this.PainelHistoric.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -547,5 +622,9 @@
         private Button BtnSeven;
         private Button BtnParenteses;
         private Button BtnFour;
+        private Panel PainelHistoric;
+        private Button button1;
+        private Button button2;
+        private Button BtnHistoric;
     }
 }

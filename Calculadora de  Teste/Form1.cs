@@ -1,3 +1,4 @@
+using System.Drawing.Drawing2D;
 using System.Globalization;
 
 namespace Calculadora_de__Teste
@@ -26,6 +27,12 @@ namespace Calculadora_de__Teste
         public Form1()
         {
             InitializeComponent();
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            GraphicsPath forma = new GraphicsPath();
+            forma.AddEllipse(0, 0, BtnHistoric.Width, BtnHistoric.Height);
+            BtnHistoric.Region = new Region(forma);
         }
         private void AppendNumbers(String number)
         {
@@ -149,6 +156,18 @@ namespace Calculadora_de__Teste
             else if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)   Send();
             else
                 MessageBox.Show("Input não identificado.");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            PainelHistoric.Visible = false;
+        }
+
+        private void BtnHistoric_Click(object sender, EventArgs e)
+        {
+            if (PainelHistoric.Visible == true) PainelHistoric.Visible = false;
+            else PainelHistoric.Visible = true;
+            //PainelHistoric.Visible = true ? PainelHistoric.Visible = false : PainelHistoric.Visible = true;
         }
     }
 }
