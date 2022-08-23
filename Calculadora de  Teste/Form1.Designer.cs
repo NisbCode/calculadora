@@ -1,6 +1,6 @@
 ﻿namespace Calculadora_de__Teste
 {
-    partial class Form1
+    partial class Calculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -57,12 +57,14 @@
             this.LblSign = new System.Windows.Forms.Label();
             this.LblOne = new System.Windows.Forms.Label();
             this.PainelHistoric = new System.Windows.Forms.Panel();
-            this.BtnSwitchHist = new System.Windows.Forms.Button();
-            this.BtnSwitchHome = new System.Windows.Forms.Button();
             this.TimerHistoric = new System.Windows.Forms.Timer(this.components);
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnSwitchHome = new System.Windows.Forms.Button();
+            this.BtnSwitchHist = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.PanelDisplay.SuspendLayout();
             this.PainelHistoric.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -106,7 +108,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(431, 411);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(430, 403);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.TabStop = true;
             // 
@@ -118,7 +120,7 @@
             this.BtnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnZero.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnZero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnZero.Location = new System.Drawing.Point(110, 331);
+            this.BtnZero.Location = new System.Drawing.Point(110, 323);
             this.BtnZero.Name = "BtnZero";
             this.BtnZero.Size = new System.Drawing.Size(101, 77);
             this.BtnZero.TabIndex = 24;
@@ -135,9 +137,9 @@
             this.BtnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnThree.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnThree.Location = new System.Drawing.Point(217, 249);
+            this.BtnThree.Location = new System.Drawing.Point(217, 243);
             this.BtnThree.Name = "BtnThree";
-            this.BtnThree.Size = new System.Drawing.Size(101, 76);
+            this.BtnThree.Size = new System.Drawing.Size(101, 74);
             this.BtnThree.TabIndex = 23;
             this.BtnThree.TabStop = false;
             this.BtnThree.Text = "3";
@@ -152,9 +154,9 @@
             this.BtnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTwo.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnTwo.Location = new System.Drawing.Point(110, 249);
+            this.BtnTwo.Location = new System.Drawing.Point(110, 243);
             this.BtnTwo.Name = "BtnTwo";
-            this.BtnTwo.Size = new System.Drawing.Size(101, 76);
+            this.BtnTwo.Size = new System.Drawing.Size(101, 74);
             this.BtnTwo.TabIndex = 22;
             this.BtnTwo.TabStop = false;
             this.BtnTwo.Text = "2";
@@ -169,9 +171,9 @@
             this.BtnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSix.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnSix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnSix.Location = new System.Drawing.Point(217, 167);
+            this.BtnSix.Location = new System.Drawing.Point(217, 163);
             this.BtnSix.Name = "BtnSix";
-            this.BtnSix.Size = new System.Drawing.Size(101, 76);
+            this.BtnSix.Size = new System.Drawing.Size(101, 74);
             this.BtnSix.TabIndex = 21;
             this.BtnSix.TabStop = false;
             this.BtnSix.Text = "6";
@@ -186,9 +188,9 @@
             this.BtnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFive.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnFive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnFive.Location = new System.Drawing.Point(110, 167);
+            this.BtnFive.Location = new System.Drawing.Point(110, 163);
             this.BtnFive.Name = "BtnFive";
-            this.BtnFive.Size = new System.Drawing.Size(101, 76);
+            this.BtnFive.Size = new System.Drawing.Size(101, 74);
             this.BtnFive.TabIndex = 20;
             this.BtnFive.TabStop = false;
             this.BtnFive.Text = "5";
@@ -203,7 +205,7 @@
             this.BtnComma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnComma.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnComma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnComma.Location = new System.Drawing.Point(217, 331);
+            this.BtnComma.Location = new System.Drawing.Point(217, 323);
             this.BtnComma.Name = "BtnComma";
             this.BtnComma.Size = new System.Drawing.Size(101, 77);
             this.BtnComma.TabIndex = 19;
@@ -219,9 +221,9 @@
             this.BtnMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMultiplication.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnMultiplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnMultiplication.Location = new System.Drawing.Point(324, 85);
+            this.BtnMultiplication.Location = new System.Drawing.Point(324, 83);
             this.BtnMultiplication.Name = "BtnMultiplication";
-            this.BtnMultiplication.Size = new System.Drawing.Size(104, 76);
+            this.BtnMultiplication.Size = new System.Drawing.Size(103, 74);
             this.BtnMultiplication.TabIndex = 18;
             this.BtnMultiplication.TabStop = false;
             this.BtnMultiplication.Text = "*";
@@ -238,7 +240,7 @@
             this.BtnDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BtnDivision.Location = new System.Drawing.Point(324, 3);
             this.BtnDivision.Name = "BtnDivision";
-            this.BtnDivision.Size = new System.Drawing.Size(104, 76);
+            this.BtnDivision.Size = new System.Drawing.Size(103, 74);
             this.BtnDivision.TabIndex = 17;
             this.BtnDivision.TabStop = false;
             this.BtnDivision.Text = "÷";
@@ -255,7 +257,7 @@
             this.BtnCE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BtnCE.Location = new System.Drawing.Point(110, 3);
             this.BtnCE.Name = "BtnCE";
-            this.BtnCE.Size = new System.Drawing.Size(101, 76);
+            this.BtnCE.Size = new System.Drawing.Size(101, 74);
             this.BtnCE.TabIndex = 4;
             this.BtnCE.Text = "CE";
             this.BtnCE.UseVisualStyleBackColor = false;
@@ -268,9 +270,9 @@
             this.BtnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPlus.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnPlus.Location = new System.Drawing.Point(324, 249);
+            this.BtnPlus.Location = new System.Drawing.Point(324, 243);
             this.BtnPlus.Name = "BtnPlus";
-            this.BtnPlus.Size = new System.Drawing.Size(104, 76);
+            this.BtnPlus.Size = new System.Drawing.Size(103, 74);
             this.BtnPlus.TabIndex = 13;
             this.BtnPlus.TabStop = false;
             this.BtnPlus.Text = "+";
@@ -285,9 +287,9 @@
             this.BtnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinus.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnMinus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnMinus.Location = new System.Drawing.Point(324, 167);
+            this.BtnMinus.Location = new System.Drawing.Point(324, 163);
             this.BtnMinus.Name = "BtnMinus";
-            this.BtnMinus.Size = new System.Drawing.Size(104, 76);
+            this.BtnMinus.Size = new System.Drawing.Size(103, 74);
             this.BtnMinus.TabIndex = 12;
             this.BtnMinus.TabStop = false;
             this.BtnMinus.Text = "-";
@@ -302,9 +304,9 @@
             this.BtnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEight.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnEight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnEight.Location = new System.Drawing.Point(110, 85);
+            this.BtnEight.Location = new System.Drawing.Point(110, 83);
             this.BtnEight.Name = "BtnEight";
-            this.BtnEight.Size = new System.Drawing.Size(101, 76);
+            this.BtnEight.Size = new System.Drawing.Size(101, 74);
             this.BtnEight.TabIndex = 11;
             this.BtnEight.TabStop = false;
             this.BtnEight.Text = "8";
@@ -321,7 +323,7 @@
             this.BtnC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BtnC.Location = new System.Drawing.Point(3, 3);
             this.BtnC.Name = "BtnC";
-            this.BtnC.Size = new System.Drawing.Size(101, 76);
+            this.BtnC.Size = new System.Drawing.Size(101, 74);
             this.BtnC.TabIndex = 3;
             this.BtnC.Text = "C";
             this.BtnC.UseVisualStyleBackColor = false;
@@ -335,9 +337,9 @@
             this.BtnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOne.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnOne.Location = new System.Drawing.Point(3, 249);
+            this.BtnOne.Location = new System.Drawing.Point(3, 243);
             this.BtnOne.Name = "BtnOne";
-            this.BtnOne.Size = new System.Drawing.Size(101, 76);
+            this.BtnOne.Size = new System.Drawing.Size(101, 74);
             this.BtnOne.TabIndex = 8;
             this.BtnOne.TabStop = false;
             this.BtnOne.Text = "1";
@@ -352,9 +354,9 @@
             this.BtnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSeven.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnSeven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnSeven.Location = new System.Drawing.Point(3, 85);
+            this.BtnSeven.Location = new System.Drawing.Point(3, 83);
             this.BtnSeven.Name = "BtnSeven";
-            this.BtnSeven.Size = new System.Drawing.Size(101, 76);
+            this.BtnSeven.Size = new System.Drawing.Size(101, 74);
             this.BtnSeven.TabIndex = 7;
             this.BtnSeven.TabStop = false;
             this.BtnSeven.Text = "7";
@@ -369,9 +371,9 @@
             this.BtnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnNine.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnNine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnNine.Location = new System.Drawing.Point(217, 85);
+            this.BtnNine.Location = new System.Drawing.Point(217, 83);
             this.BtnNine.Name = "BtnNine";
-            this.BtnNine.Size = new System.Drawing.Size(101, 76);
+            this.BtnNine.Size = new System.Drawing.Size(101, 74);
             this.BtnNine.TabIndex = 5;
             this.BtnNine.TabStop = false;
             this.BtnNine.Text = "9";
@@ -388,7 +390,7 @@
             this.BtnBackspace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BtnBackspace.Location = new System.Drawing.Point(217, 3);
             this.BtnBackspace.Name = "BtnBackspace";
-            this.BtnBackspace.Size = new System.Drawing.Size(101, 76);
+            this.BtnBackspace.Size = new System.Drawing.Size(101, 74);
             this.BtnBackspace.TabIndex = 2;
             this.BtnBackspace.Text = "<==";
             this.BtnBackspace.UseVisualStyleBackColor = false;
@@ -402,9 +404,9 @@
             this.BtnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEnter.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnEnter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnEnter.Location = new System.Drawing.Point(324, 331);
+            this.BtnEnter.Location = new System.Drawing.Point(324, 323);
             this.BtnEnter.Name = "BtnEnter";
-            this.BtnEnter.Size = new System.Drawing.Size(104, 77);
+            this.BtnEnter.Size = new System.Drawing.Size(103, 77);
             this.BtnEnter.TabIndex = 1;
             this.BtnEnter.Text = "=";
             this.BtnEnter.UseVisualStyleBackColor = false;
@@ -418,7 +420,7 @@
             this.BtnParenteses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnParenteses.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnParenteses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnParenteses.Location = new System.Drawing.Point(3, 331);
+            this.BtnParenteses.Location = new System.Drawing.Point(3, 323);
             this.BtnParenteses.Name = "BtnParenteses";
             this.BtnParenteses.Size = new System.Drawing.Size(101, 77);
             this.BtnParenteses.TabIndex = 2;
@@ -434,9 +436,9 @@
             this.BtnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFour.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnFour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnFour.Location = new System.Drawing.Point(3, 167);
+            this.BtnFour.Location = new System.Drawing.Point(3, 163);
             this.BtnFour.Name = "BtnFour";
-            this.BtnFour.Size = new System.Drawing.Size(101, 76);
+            this.BtnFour.Size = new System.Drawing.Size(101, 74);
             this.BtnFour.TabIndex = 3;
             this.BtnFour.TabStop = false;
             this.BtnFour.Text = "4";
@@ -447,6 +449,7 @@
             // 
             this.PanelDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.PanelDisplay.Controls.Add(this.BtnHistoric);
             this.PanelDisplay.Controls.Add(this.LblEquals);
             this.PanelDisplay.Controls.Add(this.LblTwo);
@@ -454,21 +457,21 @@
             this.PanelDisplay.Controls.Add(this.LblOne);
             this.PanelDisplay.Location = new System.Drawing.Point(12, 12);
             this.PanelDisplay.Name = "PanelDisplay";
-            this.PanelDisplay.Size = new System.Drawing.Size(431, 144);
+            this.PanelDisplay.Size = new System.Drawing.Size(430, 144);
             this.PanelDisplay.TabIndex = 2;
             // 
             // BtnHistoric
             // 
-            this.BtnHistoric.BackColor = System.Drawing.Color.Transparent;
+            this.BtnHistoric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.BtnHistoric.FlatAppearance.BorderSize = 0;
             this.BtnHistoric.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnHistoric.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnHistoric.ForeColor = System.Drawing.Color.White;
-            this.BtnHistoric.Location = new System.Drawing.Point(364, 15);
+            this.BtnHistoric.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnHistoric.Location = new System.Drawing.Point(370, 10);
             this.BtnHistoric.Name = "BtnHistoric";
             this.BtnHistoric.Size = new System.Drawing.Size(50, 50);
             this.BtnHistoric.TabIndex = 4;
-            this.BtnHistoric.Text = "H";
+            this.BtnHistoric.Text = " H";
             this.BtnHistoric.UseVisualStyleBackColor = false;
             this.BtnHistoric.Click += new System.EventHandler(this.BtnHistoric_Click);
             // 
@@ -479,7 +482,7 @@
             this.LblEquals.AutoSize = true;
             this.LblEquals.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblEquals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.LblEquals.Location = new System.Drawing.Point(330, 109);
+            this.LblEquals.Location = new System.Drawing.Point(329, 109);
             this.LblEquals.Name = "LblEquals";
             this.LblEquals.Size = new System.Drawing.Size(25, 25);
             this.LblEquals.TabIndex = 3;
@@ -492,7 +495,7 @@
             this.LblTwo.AutoSize = true;
             this.LblTwo.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.LblTwo.Location = new System.Drawing.Point(330, 37);
+            this.LblTwo.Location = new System.Drawing.Point(329, 37);
             this.LblTwo.Name = "LblTwo";
             this.LblTwo.Size = new System.Drawing.Size(38, 41);
             this.LblTwo.TabIndex = 2;
@@ -529,36 +532,37 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PainelHistoric.AutoSize = true;
-            this.PainelHistoric.Controls.Add(this.BtnSwitchHist);
-            this.PainelHistoric.Controls.Add(this.BtnSwitchHome);
-            this.PainelHistoric.Location = new System.Drawing.Point(0, 0);
-            this.PainelHistoric.MaximumSize = new System.Drawing.Size(250, 570);
-            this.PainelHistoric.MinimumSize = new System.Drawing.Size(250, 570);
+            this.PainelHistoric.Controls.Add(this.tableLayoutPanel2);
+            this.PainelHistoric.Location = new System.Drawing.Point(0, -2);
+            this.PainelHistoric.Margin = new System.Windows.Forms.Padding(0);
             this.PainelHistoric.Name = "PainelHistoric";
-            this.PainelHistoric.Size = new System.Drawing.Size(250, 570);
+            this.PainelHistoric.Size = new System.Drawing.Size(253, 565);
             this.PainelHistoric.TabIndex = 3;
             // 
-            // BtnSwitchHist
+            // TimerHistoric
             // 
-            this.BtnSwitchHist.AutoSize = true;
-            this.BtnSwitchHist.BackColor = System.Drawing.Color.Transparent;
-            this.BtnSwitchHist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnSwitchHist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnSwitchHist.FlatAppearance.BorderSize = 0;
-            this.BtnSwitchHist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSwitchHist.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnSwitchHist.ForeColor = System.Drawing.Color.White;
-            this.BtnSwitchHist.Location = new System.Drawing.Point(0, 60);
-            this.BtnSwitchHist.Name = "BtnSwitchHist";
-            this.BtnSwitchHist.Size = new System.Drawing.Size(250, 60);
-            this.BtnSwitchHist.TabIndex = 1;
-            this.BtnSwitchHist.Text = "HISTÓRICO";
-            this.BtnSwitchHist.UseVisualStyleBackColor = false;
+            this.TimerHistoric.Interval = 10;
+            this.TimerHistoric.Tick += new System.EventHandler(this.TimerHistoric_Tick);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.BtnSwitchHist, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.BtnSwitchHome, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 2);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 181F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(250, 560);
+            this.tableLayoutPanel2.TabIndex = 2;
             // 
             // BtnSwitchHome
             // 
             this.BtnSwitchHome.AutoSize = true;
-            this.BtnSwitchHome.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSwitchHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.BtnSwitchHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BtnSwitchHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnSwitchHome.Enabled = false;
@@ -567,29 +571,44 @@
             this.BtnSwitchHome.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSwitchHome.ForeColor = System.Drawing.Color.White;
             this.BtnSwitchHome.Location = new System.Drawing.Point(0, 0);
+            this.BtnSwitchHome.Margin = new System.Windows.Forms.Padding(0);
             this.BtnSwitchHome.Name = "BtnSwitchHome";
             this.BtnSwitchHome.Size = new System.Drawing.Size(250, 60);
-            this.BtnSwitchHome.TabIndex = 0;
+            this.BtnSwitchHome.TabIndex = 1;
             this.BtnSwitchHome.Text = "HOME";
             this.BtnSwitchHome.UseVisualStyleBackColor = false;
             // 
-            // TimerHistoric
+            // BtnSwitchHist
             // 
-            this.TimerHistoric.Interval = 10;
-            this.TimerHistoric.Tick += new System.EventHandler(this.TimerHistoric_Tick);
+            this.BtnSwitchHist.AutoSize = true;
+            this.BtnSwitchHist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.BtnSwitchHist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnSwitchHist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSwitchHist.FlatAppearance.BorderSize = 0;
+            this.BtnSwitchHist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSwitchHist.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSwitchHist.ForeColor = System.Drawing.Color.White;
+            this.BtnSwitchHist.Location = new System.Drawing.Point(0, 65);
+            this.BtnSwitchHist.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnSwitchHist.Name = "BtnSwitchHist";
+            this.BtnSwitchHist.Size = new System.Drawing.Size(250, 60);
+            this.BtnSwitchHist.TabIndex = 2;
+            this.BtnSwitchHist.Text = "HISTÓRICO";
+            this.BtnSwitchHist.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.ClientSize = new System.Drawing.Size(455, 569);
+            this.ClientSize = new System.Drawing.Size(454, 561);
             this.Controls.Add(this.PainelHistoric);
             this.Controls.Add(this.PanelDisplay);
             this.Controls.Add(this.tableLayoutPanel1);
             this.KeyPreview = true;
             this.MinimumSize = new System.Drawing.Size(395, 400);
-            this.Name = "Form1";
+            this.Name = "Calculadora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
@@ -597,7 +616,8 @@
             this.PanelDisplay.ResumeLayout(false);
             this.PanelDisplay.PerformLayout();
             this.PainelHistoric.ResumeLayout(false);
-            this.PainelHistoric.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -631,9 +651,10 @@
         private Button BtnParenteses;
         private Button BtnFour;
         private Panel PainelHistoric;
-        private Button BtnSwitchHome;
-        private Button BtnSwitchHist;
         private Button BtnHistoric;
         private System.Windows.Forms.Timer TimerHistoric;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Button BtnSwitchHist;
+        private Button BtnSwitchHome;
     }
 }

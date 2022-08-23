@@ -3,14 +3,21 @@ using System.Globalization;
 
 namespace Calculadora_de__Teste
 {
-    public partial class Form1 : Form
+    public partial class Calculadora : Form
     {
         int cursor = 0;                 // if(cursor == 0) LblOne else LblTwo
         int MAX_ENTRIES = 8;            // Máximo de entradas que cada parte do display pode ter
-        //BtnEnter.TabIndex = 1;        // travar o selct do tab de sair do botão enter
-        private int startLeft = -300;  // start position do painel
-        private int endLeft = 10;      // end position do painel
-        private int stepSize = 10;     // pixels para mover
+        //BtnEnter.TabIndex = 1;        // travar o select do tab de sair do botão enter
+        private int startLeft = -300;   // start position do painel
+        private int endLeft = 10;       // end position do painel
+        private int stepSize = 10;      // pixels para mover
+        /*
+        public static string? SetValueForHist1;
+        public static string? SetValueForHist2;
+        public static string? SetValueForHistSign;
+        public static string? SetValueForHistEquals;
+        */
+        public Control HistButton;
 
         const String zero     = "0";
         const String one      = "1";
@@ -27,9 +34,30 @@ namespace Calculadora_de__Teste
         const String mult     = "*";
         const String divis    = "÷";
         const String porc     = "%";
-        public Form1()
+        public Calculadora()
         {
             InitializeComponent();
+        }
+
+        public void addButtonsHistoric(String lone, String ltwo, String lsign, String lequal)
+        {
+            // PASSAR DADOS PARA O HISTÓRICO
+            /*
+            SetValueForHist1 = lone;
+            SetValueForHist2 = ltwo;
+            SetValueForHistSign = lsign;
+            SetValueForHistEquals = lequal;
+            */
+
+            Button btn = new Button();
+            btn.Text = lone + " " + lsign + " " + ltwo + " = " + lequal;
+            //LabelNoHistoric.Remove()
+            // OndeVoceVaiAdicionar.Controls.Add(btn);
+            // exemplo:
+            //new Historic();
+            /*
+            (new Historic()).ShowDialog();
+            (new Historic()).flowLayoutPanel1.Controls.Add(btn);*/
         }
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -108,6 +136,8 @@ namespace Calculadora_de__Teste
                 LblEquals.Text = Convert.ToString(Math.Round(float_conv, 1));
             }
             cursor = 0;
+
+            addButtonsHistoric(Convert.ToString(LblOne), Convert.ToString(LblTwo), sign, equals);
         }
         private void BtnEnter_Click(object sender, EventArgs e) {Send();}
         private void resetAll()
@@ -216,6 +246,13 @@ namespace Calculadora_de__Teste
                 TimerHistoric.Enabled = false;
             }
             */
+        }
+
+        private void BtnSwitchHist_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new Historic()).ShowDialog();
+            this.Close();
         }
     }
 }

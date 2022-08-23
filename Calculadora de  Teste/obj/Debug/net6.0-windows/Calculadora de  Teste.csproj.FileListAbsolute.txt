@@ -4,7 +4,6 @@ C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplic
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\bin\Debug\net6.0-windows\Calculadora de  Teste.dll
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\bin\Debug\net6.0-windows\Calculadora de  Teste.pdb
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora de  Teste.csproj.AssemblyReference.cache
-C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora_de__Teste.Form1.resources
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora de  Teste.csproj.GenerateResource.cache
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora de  Teste.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora de  Teste.AssemblyInfoInputs.cache
@@ -15,3 +14,5 @@ C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplic
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora de  Teste.pdb
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora de  Teste.genruntimeconfig.cache
 C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\ref\Calculadora de  Teste.dll
+C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora_de__Teste.Historic.resources
+C:\Users\Nisb\OneDrive\Área de Trabalho\Programação\projetos-aleatorios\aplicativos-desktop\Calculadora de  Teste\Calculadora de  Teste\obj\Debug\net6.0-windows\Calculadora_de__Teste.Calculadora.resources
