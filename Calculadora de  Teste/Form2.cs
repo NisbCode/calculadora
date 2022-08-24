@@ -23,6 +23,17 @@ namespace Calculadora_de__Teste
 
         private void Historic_Load(object sender, EventArgs e)
         {
+            if (Calculadora.HasHistValues != 0)
+            {
+                TlpButtons.Show();
+                //MessageBox.Show(Calculadora.SetValueForHist1 + " " + Calculadora.SetValueForHistSign + " " + Calculadora.SetValueForHist2 + " = " + Calculadora.SetValueForHistEquals);
+                //MessageBox.Show(Calculadora.SetValueForHist1 + " " + Calculadora.SetValueForHist2);
+                button1.Text = Calculadora.SetValueForHist1 + " " + Calculadora.SetValueForHistSign + " " + Calculadora.SetValueForHist2 + " = " + Calculadora.SetValueForHistEquals;
+                LabelNoHistoric.Text = "Há " + Calculadora.HasHistValues + " registro(s).";
+            } else
+            {
+                TlpButtons.Hide();
+            }
             /*
             Button btn = new Button();
             btn.Text = "DEADLY KISS";

@@ -9,15 +9,15 @@ namespace Calculadora_de__Teste
         int MAX_ENTRIES = 8;            // Máximo de entradas que cada parte do display pode ter
         //BtnEnter.TabIndex = 1;        // travar o select do tab de sair do botão enter
         private int startLeft = -300;   // start position do painel
-        private int endLeft = 0;       // end position do painel
+        private int endLeft = 0;        // end position do painel
         private int stepSize = 10;      // pixels para mover
-        /*
+
+        public static int HasHistValues = 0;
         public static string? SetValueForHist1;
         public static string? SetValueForHist2;
         public static string? SetValueForHistSign;
         public static string? SetValueForHistEquals;
-        */
-        public Control HistButton;
+        //public Control HistButton;
 
         const String zero     = "0";
         const String one      = "1";
@@ -41,16 +41,16 @@ namespace Calculadora_de__Teste
 
         public void addButtonsHistoric(String lone, String ltwo, String lsign, String lequal)
         {
+            HasHistValues += 1;
             // PASSAR DADOS PARA O HISTÓRICO
-            /*
             SetValueForHist1 = lone;
             SetValueForHist2 = ltwo;
             SetValueForHistSign = lsign;
             SetValueForHistEquals = lequal;
-            */
 
+            /*
             Button btn = new Button();
-            btn.Text = lone + " " + lsign + " " + ltwo + " = " + lequal;
+            btn.Text = lone + " " + lsign + " " + ltwo + " = " + lequal;*/
             //LabelNoHistoric.Remove()
             // OndeVoceVaiAdicionar.Controls.Add(btn);
             // exemplo:
@@ -59,6 +59,7 @@ namespace Calculadora_de__Teste
             (new Historic()).ShowDialog();
             (new Historic()).flowLayoutPanel1.Controls.Add(btn);*/
         }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             GraphicsPath forma = new GraphicsPath();
@@ -137,7 +138,7 @@ namespace Calculadora_de__Teste
             }
             cursor = 0;
 
-            addButtonsHistoric(Convert.ToString(LblOne), Convert.ToString(LblTwo), sign, equals);
+            addButtonsHistoric(LblOne.Text, LblTwo.Text, sign, LblEquals.Text);
         }
         private void BtnEnter_Click(object sender, EventArgs e) {Send();}
         private void resetAll()

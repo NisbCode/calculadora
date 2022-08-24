@@ -32,7 +32,7 @@
             this.LabelNoHistoric = new System.Windows.Forms.Label();
             this.BtnHistoric2 = new System.Windows.Forms.Button();
             this.TimerHistoric2 = new System.Windows.Forms.Timer(this.components);
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TlpButtons = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnSwitchHist = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnSwitchToHome = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.TlpButtons.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.PainelHistoric.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -78,18 +78,18 @@
             this.TimerHistoric2.Interval = 10;
             this.TimerHistoric2.Tick += new System.EventHandler(this.TimerHistoric2_Tick);
             // 
-            // tableLayoutPanel1
+            // TlpButtons
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 51);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(457, 513);
-            this.tableLayoutPanel1.TabIndex = 6;
+            this.TlpButtons.ColumnCount = 1;
+            this.TlpButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TlpButtons.Controls.Add(this.button1, 0, 0);
+            this.TlpButtons.Location = new System.Drawing.Point(2, 51);
+            this.TlpButtons.Name = "TlpButtons";
+            this.TlpButtons.RowCount = 2;
+            this.TlpButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TlpButtons.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TlpButtons.Size = new System.Drawing.Size(457, 513);
+            this.TlpButtons.TabIndex = 6;
             // 
             // button1
             // 
@@ -234,13 +234,13 @@
             this.ClientSize = new System.Drawing.Size(454, 561);
             this.Controls.Add(this.PainelHistoric);
             this.Controls.Add(this.BtnHistoric2);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.TlpButtons);
             this.Controls.Add(this.LabelNoHistoric);
             this.Name = "Historic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historic";
             this.Load += new System.EventHandler(this.Historic_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.TlpButtons.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.PainelHistoric.ResumeLayout(false);
@@ -256,7 +256,7 @@
         private Label LabelNoHistoric;
         private Button BtnHistoric2;
         private System.Windows.Forms.Timer TimerHistoric2;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel TlpButtons;
         private Button button1;
         private TableLayoutPanel tableLayoutPanel2;
         private Button BtnSwitchHist;
