@@ -9,7 +9,7 @@ namespace Calculadora_de__Teste
         int MAX_ENTRIES = 8;            // Máximo de entradas que cada parte do display pode ter
         //BtnEnter.TabIndex = 1;        // travar o select do tab de sair do botão enter
         private int startLeft = -300;   // start position do painel
-        private int endLeft = 10;       // end position do painel
+        private int endLeft = 0;       // end position do painel
         private int stepSize = 10;      // pixels para mover
         /*
         public static string? SetValueForHist1;
@@ -247,7 +247,6 @@ namespace Calculadora_de__Teste
             }
             */
         }
-
         private void BtnSwitchHist_Click(object sender, EventArgs e)
         {
             this.Hide();

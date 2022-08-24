@@ -14,7 +14,7 @@ namespace Calculadora_de__Teste
     public partial class Historic : Form
     {
         private int startLeft = -300;   // start position do painel
-        private int endLeft = 10;       // end position do painel
+        private int endLeft = 0;       // end position do painel
         private int stepSize = 10;      // pixels para mover
         public Historic()
         {
@@ -63,7 +63,8 @@ namespace Calculadora_de__Teste
             if (PainelHistoric.Left > endLeft) PainelHistoric.Left = endLeft;
             if (PainelHistoric.Left == endLeft) TimerHistoric2.Enabled = false;
         }
-        private void BtnSwitchHome_Click(object sender, EventArgs e)
+
+        private void BtnSwitchToHome_Click(object sender, EventArgs e)
         {
             this.Hide();
             (new Calculadora()).ShowDialog();

@@ -57,10 +57,10 @@
             this.LblSign = new System.Windows.Forms.Label();
             this.LblOne = new System.Windows.Forms.Label();
             this.PainelHistoric = new System.Windows.Forms.Panel();
-            this.TimerHistoric = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnSwitchHome = new System.Windows.Forms.Button();
             this.BtnSwitchHist = new System.Windows.Forms.Button();
+            this.BtnSwitchHome = new System.Windows.Forms.Button();
+            this.TimerHistoric = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.PanelDisplay.SuspendLayout();
             this.PainelHistoric.SuspendLayout();
@@ -528,9 +528,6 @@
             // 
             // PainelHistoric
             // 
-            this.PainelHistoric.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.PainelHistoric.AutoSize = true;
             this.PainelHistoric.Controls.Add(this.tableLayoutPanel2);
             this.PainelHistoric.Location = new System.Drawing.Point(0, -2);
@@ -539,25 +536,41 @@
             this.PainelHistoric.Size = new System.Drawing.Size(253, 565);
             this.PainelHistoric.TabIndex = 3;
             // 
-            // TimerHistoric
-            // 
-            this.TimerHistoric.Interval = 10;
-            this.TimerHistoric.Tick += new System.EventHandler(this.TimerHistoric_Tick);
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.BtnSwitchHist, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.BtnSwitchHome, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 181F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(250, 560);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(253, 565);
             this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // BtnSwitchHist
+            // 
+            this.BtnSwitchHist.AutoSize = true;
+            this.BtnSwitchHist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.BtnSwitchHist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnSwitchHist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSwitchHist.FlatAppearance.BorderSize = 0;
+            this.BtnSwitchHist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSwitchHist.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSwitchHist.ForeColor = System.Drawing.Color.White;
+            this.BtnSwitchHist.Location = new System.Drawing.Point(0, 65);
+            this.BtnSwitchHist.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnSwitchHist.Name = "BtnSwitchHist";
+            this.BtnSwitchHist.Size = new System.Drawing.Size(253, 60);
+            this.BtnSwitchHist.TabIndex = 2;
+            this.BtnSwitchHist.Text = "HISTÓRICO";
+            this.BtnSwitchHist.UseVisualStyleBackColor = false;
+            this.BtnSwitchHist.Click += new System.EventHandler(this.BtnSwitchHist_Click);
             // 
             // BtnSwitchHome
             // 
@@ -573,28 +586,15 @@
             this.BtnSwitchHome.Location = new System.Drawing.Point(0, 0);
             this.BtnSwitchHome.Margin = new System.Windows.Forms.Padding(0);
             this.BtnSwitchHome.Name = "BtnSwitchHome";
-            this.BtnSwitchHome.Size = new System.Drawing.Size(250, 60);
+            this.BtnSwitchHome.Size = new System.Drawing.Size(253, 60);
             this.BtnSwitchHome.TabIndex = 1;
             this.BtnSwitchHome.Text = "HOME";
             this.BtnSwitchHome.UseVisualStyleBackColor = false;
             // 
-            // BtnSwitchHist
+            // TimerHistoric
             // 
-            this.BtnSwitchHist.AutoSize = true;
-            this.BtnSwitchHist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.BtnSwitchHist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnSwitchHist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnSwitchHist.FlatAppearance.BorderSize = 0;
-            this.BtnSwitchHist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSwitchHist.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnSwitchHist.ForeColor = System.Drawing.Color.White;
-            this.BtnSwitchHist.Location = new System.Drawing.Point(0, 65);
-            this.BtnSwitchHist.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnSwitchHist.Name = "BtnSwitchHist";
-            this.BtnSwitchHist.Size = new System.Drawing.Size(250, 60);
-            this.BtnSwitchHist.TabIndex = 2;
-            this.BtnSwitchHist.Text = "HISTÓRICO";
-            this.BtnSwitchHist.UseVisualStyleBackColor = false;
+            this.TimerHistoric.Interval = 10;
+            this.TimerHistoric.Tick += new System.EventHandler(this.TimerHistoric_Tick);
             // 
             // Calculadora
             // 
